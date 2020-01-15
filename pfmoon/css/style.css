@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background:url(../images/cloud1.jpg) no-repeat;
+    position: relative;
+    overflow:hidden;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 100%;
+}
+
+
+#burger {
+    width:30px;
+    height:30px;
+    left:15px;
+    top:15px;
+    position:absolute;
+    z-index: 9800;
+}
+#burger div {
+    position:absolute;
+    height:3px;
+    background:#fff;
+    width:100%;
+    transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+}
+#burger .top_bar {
+    top:5px;
+    width:90%;
+    left:5%;
+}
+#burger .mid_bar {
+    top:13px;
+    width:90%;
+    left:5%;
+}
+#burger .bot_bar {
+    top:21px;
+    width:90%;
+    left:5%;
+}
+#burger.on .top_bar {
+    top:11px;    
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -o-transform:rotate(45deg);    
+}
+#burger.on .mid_bar {
+    width:0;
+    left:50%;
+}
+#burger.on .bot_bar {
+    top:11px;
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);    
+}
+#backbt{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10000;
+    display: none;
+    animation: moverf 5s infinite;
+}
+#backbt img:hover{
+    background:#000;
+    border-radius: 50%;
+}
+#allMenu {
+    position:absolute;
+    position: relative;
+    width:100%;
+    height:0;
+    top:0;
+    left:0;
+    z-index:9779;
+    background: rgba(0, 0, 0, 0.568);
+    overflow:hidden;
+    transition:all 0.9s ease-in-out;
+    -webkit-transition:all 0.9s ease-in-out;
+    -moz-transition:all 0.9s ease-in-out;
+    -ms-transition:all 0.9s ease-in-out;
+    -o-transition:all 0.9s ease-in-out;
+}
+#allMenu > ul{
+    width: 230px;
+    z-index: 7777;
+}
+#allMenu > ul > li{
+    margin: 140px 0 0 50px;
+}
+#allMenu > ul > li > a{
+    color: #fff;
+    display: block;
+    font-size: 25px;
+    font-family: 'Jua', sans-serif;
+}
+#allMenu > ul > li a:hover{
+    opacity: 0.8;
+    color: #999;
+}
+#boy{
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+/* #forest{
+    position: absolute;
+    top: 500px;
+} */
+
+#cont1{
+    width: 500px;
+    height: 700px;
+    /* background:url(../images/page.png) no-repeat; */
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    text-align: center;
+    /* position: relative; */
+    /* border-radius: 5% 5% 40% 5%; */
+}
+
+#cont1 > h2 > a{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+#cont1 p{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+#cont1_1{
+    position: fixed;
+    top: 400px;
+    right: 310px;
+    display: none;
+}
+#cont1_1 > h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+#cont1_1 p{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+    font-weight: 400;
+}
+#cont1_2{
+    width: 500px;
+    height: 700px;
+    /* background:url(../images/page.png) no-repeat; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    text-align: center;
+    /* border-radius: 5% 5% 40% 5%; */
+}
+#cont1_2 > h2:nth-child(1){
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+#cont1_2 > a > img{
+    margin: 23px 0 0 5px;
+}
+
+
+#cont1_2 p{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+#cont1_2 p{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+#cont1_2 img{
+    margin:0 15px 0 0;
+}
+#cont1_3{
+    width: 500px;
+    height: 700px;
+    /* background:url(../images/page.png) no-repeat; */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    text-align: center;
+    /* border-radius: 5% 5% 40% 5%; */
+}
+
+#cont1_3 > a > img:nth-child(1){
+    margin: 25px 0 30px 5px;
+}
+
+
+#cont1_3 p{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+#cont1_3 p{
+    margin:10px 0 0 0;
+}
+#cont1_3 p:nth-child(6){
+    margin: 60px 0 0 0;
+}
+#cont1_3 img{
+    margin:0 15px 0 0;
+}
+
+#cont1_4{
+    width: 500px;
+    height: 700px;
+    /* background:url(../images/page.png) no-repeat; */
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    text-align: center;
+    /* border-radius: 5% 5% 40% 5%; */
+}
+#cont1_4 img{
+    margin: 0 30px 0 0;
+}
+#cont1_4 a{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 50px 0 0 60px;
+    text-decoration: none;
+}
+
+#cont3{
+    width:100%;
+    height:100%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    z-index: 9999;
+}
+#cont3 iframe{
+    width: 100%;
+    height: 100%;
+}
+/* 달 움직임 */
+@keyframes moveUpDown{
+    0%{
+        top: -5%;
+    }
+    50%{
+        top: 3%;
+    }
+    100%{
+        top: -5%;
+    }
+}
+@keyframes moveUpDown2{
+    0%{
+        top: 0%;
+    }
+    50%{
+        top: 3%;
+    }
+    100%{
+        top: 0%;
+    }
+}
+@keyframes moverf{
+    0%{
+        right: 0%;
+    }
+    2%{
+        right: 2%;
+    }
+    0%{
+        right: 0%;
+    }
+}
+
+#moon2.Down{
+    animation: none;
+}
+/* 달 움직임 끝 */
+@media (min-width: 1200px) {
+#moon{
+    position: absolute;
+    top: 80px;
+    right:150px;
+    z-index: 555;
+    animation: moveUpDown2 5s infinite;
+}
+#moon2{
+    position: fixed;
+    right: 1320px;
+    z-index: 666;
+    margin: 380px 0 0 0;
+    animation: moveUpDown 5s infinite;
+}
+}
+@media (min-width: 1500px) {
+    #moon{
+        position: absolute;
+        top: 0px;
+        right:0px;
+        z-index: 555;
+        animation: moveUpDown2 5s infinite;
+    }
+    #moon2{
+        position: fixed;
+        right: 1000px;
+        z-index: 666;
+        margin: 380px 0 0 0;
+        animation: moveUpDown 5s infinite;
+    }
+    }
+@media (min-width: 1900px) {
+    #moon{
+        position: absolute;
+        top: 70px;
+        right:150px;
+        z-index: 555;
+        animation: moveUpDown2 5s infinite;
+    }
+    #moon2{
+        position: fixed;
+        right: 1320px;
+        z-index: 666;
+        margin: 380px 0 0 0;
+        animation: moveUpDown 5s infinite;
+    }
+    }
+    @media (max-width: 1450px) {
+        #moon{
+            position: absolute;
+            top: 0px;
+            right:0px;
+            z-index: 555;
+            animation: moveUpDown2 5s infinite;
+        }
+        #moon2{
+            position: fixed;
+            right: 900px;
+            z-index: 666;
+            margin: 380px 0 0 0;
+            animation: moveUpDown 5s infinite;
+        }
+    }
+@media (min-width: 992px) and (max-width: 1199px) {
+    #moon{
+        position: absolute;
+        top: 0px;
+        right:0px;
+        z-index: 555;
+        animation: moveUpDown2 5s infinite;
+    }
+    #moon2{
+        position: fixed;
+        right: 720px;
+        z-index: 666;
+        margin: 380px 0 0 0;
+        animation: moveUpDown 5s infinite;
+    }
+ }
+ @media (max-width: 780px) {
+    #moon{
+        position: absolute;
+        top: 0px;
+        right:0px;
+        z-index: 555;
+        animation: moveUpDown2 5s infinite;
+    }
+    #moon2{
+        position: fixed;
+        right: 200px;
+        z-index: 666;
+        margin: 380px 0 0 0;
+        animation: moveUpDown 5s infinite;
+    }
+    #slideWrap{
+        width: 700px;
+        height: 430px;
+        overflow: hidden;
+        position: absolute;
+        position: relative;
+        top: 220px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: none;
+        border-radius: 13%;
+    }
+ }
+ @media (max-width: 380px) {
+    #moon{
+        position: absolute;
+        top: -160px;
+        right:-130px;
+        z-index: 555;
+        animation: moveUpDown2 5s infinite;
+    }
+    #moon2{
+        position: fixed;
+        right: 30px;
+        z-index: 666;
+        margin: 380px 0 0 0;
+        animation: moveUpDown 5s infinite;
+    }
+    #slideWrap{
+        width: 700px;
+        height: 430px;
+        overflow: hidden;
+        position: absolute;
+        position: relative;
+        top: 220px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: none;
+        border-radius: 13%;
+    }
+ }
+#cloud{
+    position: absolute;
+    top:207px;
+    left: 0;
+    z-index: 777;
+}
+#forest{
+    position: absolute;
+    top:530px;
+}
+#year{
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    transform:rotate(-90deg);
+}
+#year h2{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Jua', sans-serif;
+}
+
+#name{
+    width: 140px;
+    height: 700px;
+    margin: 0 auto;
+    position: absolute;
+    left: 500px;
+    top: 240px;
+}
+.name1{
+    float: left;
+    color: #fff;
+    font-size: 25px;
+    margin: 20px 10px 40px 0;
+    font-family: 'Jua', sans-serif;
+}
+
+.name2{
+    float: right;
+    color: #fff;
+    font-size: 50px;
+    margin: 20px 30px 40px 0;
+    font-family: 'Jua', sans-serif;
+}
+
+
+
+/* @media screen and (max-width: 1200px) { 
+    
+    body {
+    width: 100%;
+    height: 100%;
+}
+
+    #moon2{
+        top:0;
+        left: 1000px;
+    }
+ } */
